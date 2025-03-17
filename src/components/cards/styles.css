@@ -1,0 +1,72 @@
+.full-card-container {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.full-card-container:hover {
+  border: 4px solid var(--primaryColor);
+}
+
+.top-card-container {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  min-height: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 0.5px solid var(--strokeDark);
+  background-color: var(--blueBackground);
+}
+
+.card-container-top-header {
+  min-width: 302px;
+  background-color: var(--white);
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-width: 1px;
+  border-color: var(--strokeDark);
+  padding: 24px;
+  box-shadow: 0px 4px 20px rgba(38, 99, 235, 0.1);
+  transition: 0.05s ease-out;
+}
+
+.card-container {
+  /* width: 302px; */
+  background-color: var(--white);
+  border-radius: 16px;
+  border-width: 1px;
+  border-color: var(--strokeDark);
+  padding: 24px;
+  box-shadow: 0px 4px 20px rgba(38, 99, 235, 0.1);
+  transition: 0.05s ease-out;
+}
+
+.card-container:hover {
+  border: 4px solid var(--primaryColor);
+}
+
+.card-title-text {
+  margin-right: 16px;
+}
+
+.card-title-text-position {
+  display: flex;
+  align-items: center;
+}
+
+.card-title-number {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 6px;
+  padding-left: 6px;
+  border-radius: 16px;
+}
+
+.blue-background {
+  background-color: var(--primaryColor);
+}
+
+.white-background {
+  background-color: var(--white);
+}

@@ -1,0 +1,20 @@
+.graph-container {
+  align-items: center;
+  justify-content: center;
+}
+
+.graph-container-title-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.graph-container-legend {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 22px;
+}

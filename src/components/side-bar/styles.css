@@ -1,0 +1,22 @@
+.side-bar-container {
+  background-color: var(--blueBackground);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.side-bar-container .side-bar-button {
+  margin-bottom: 32px;
+}
+
+.side-bar-button-new {
+  background-color: var(--primaryColor) !important ;
+}
+
+.side-bar-button-list {
+  margin-bottom: 8px !important;
+}

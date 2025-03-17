@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Content from "./components/content/content.tsx";
+import SideBar from "./components/side-bar/side-bar.tsx";
+import TopBar from "./components/top-bar/top-bar.tsx";
 
 function App() {
+  const [closeSidebar, setCloseSidebar] = useState(false)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`container ${closeSidebar ? 'collapsed' : 'expanded'}`}>
+      <div>
+        <SideBar closeSidebar={closeSidebar} toggleSidebar={() => setCloseSidebar(!closeSidebar)}/>
+      </div>
+      <div className="right-container">
+        <TopBar />
+        <Content />
+      </div>
     </div>
   );
 }

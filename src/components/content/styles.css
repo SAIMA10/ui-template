@@ -1,0 +1,28 @@
+.content-container {
+    background-color: var(--white);
+    padding: 24px;
+}
+
+.title-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.title-bar-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-bar-text-container .title-bar-text {
+    margin: 0;
+}
+
+.title-bar-timeframe-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}

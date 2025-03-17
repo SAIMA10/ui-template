@@ -1,0 +1,43 @@
+.quick-list-container {
+  padding: 24px;
+  flex-grow: 1;
+  border-radius: 16px;
+  min-width: 360px;
+  background-color: var(--white);
+  box-shadow: 0px 4px 20px rgba(38, 99, 235, 0.1);
+}
+
+.quick-list-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.quick-list-icon {
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid var(--strokeDark);
+}
+
+.quick-list-icon:hover {
+    background-color: var(--primaryColor);
+}
+
+.quick-list-item-container {
+  display: flex;
+  min-width: 272px;
+  border-radius: 4px;
+  border: 1px solid var(--strokeLight);
+  padding: 8px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  transition: outline 0.1s ease-in-out;
+}
+
+.quick-list-item-container:hover {
+  outline: 4px solid var(--primaryColor);
+}

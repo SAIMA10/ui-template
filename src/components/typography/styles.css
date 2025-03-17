@@ -1,0 +1,40 @@
+.text {
+  font-family: "Geist", sans-serif;
+  /* font-optical-sizing: auto; */
+  /* font-weight: 400;  */
+  /* Or any other weight */
+  /* font-style: normal; */
+}
+
+.text-h1 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.text-bodyText {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.text-smallText {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.text-tinyText {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.text-numberBig {
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 4%;
+}
+
+/* 
+.text-numbersSmall {
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 4%;
+} */
