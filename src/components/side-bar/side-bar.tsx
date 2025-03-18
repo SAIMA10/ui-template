@@ -88,7 +88,6 @@ const SideBar = ({ closeSidebar, toggleSidebar }) => {
           backgroundColor: colors["white"],
           borderRadius: "16px",
           paddingTop: "8px",
-          top: 0,
           bottom: 0,
           position: "sticky",
         }}
