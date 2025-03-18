@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className={`container ${closeSidebar ? 'collapsed' : 'expanded'}`}>
-      <div>
+      <div className="sideBar">
         <SideBar closeSidebar={closeSidebar} toggleSidebar={() => setCloseSidebar(!closeSidebar)}/>
       </div>
       <div className="right-container">
