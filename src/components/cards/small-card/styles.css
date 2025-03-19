@@ -8,10 +8,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: 0.05s ease-out;
 }
 
 .small-card-container:hover {
-  border: 4px solid var(--primaryColor);
+  outline: 4px solid var(--primaryColor);
 }
 
 .success-background {
