@@ -68,7 +68,7 @@ const SideBar = ({ closeSidebar, toggleSidebar }) => {
         <div style={{ marginBottom: "32px" }}>
           <Divider />
         </div>
-        <div style={{ marginBottom: "149px" }}>
+        <div style={{ marginBottom: "32px" }}>
           {sideBarButtonsMenu.map((button) => {
             const Icon = SideBarMenuIcons[button.icon];
             return closeSidebar ? (
