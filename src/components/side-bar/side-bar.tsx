@@ -42,57 +42,62 @@ const SideBar = ({ closeSidebar, toggleSidebar }) => {
       <div style={{ marginBottom: "32px" }}>
         <Divider />
       </div>
-      <div style={{ marginBottom: "32px" }}>
-        {sideBarButtons.map((button) => {
-          const Icon = SideBarIcons[button.icon];
-          return closeSidebar ? (
-            <Button
-              variant="icon"
-              className="side-bar-button-list"
-              icon={<Icon />}
-              children={undefined}
-            ></Button>
-          ) : (
-            <Button
-              variant="ghost"
-              className="side-bar-button-list"
-              icon={<Icon />}
-            >
-              {button.display_name}
-            </Button>
-          );
-        })}
+
+      <div className="side-bar-scrollable">
+        <div style={{ marginBottom: "32px" }}>
+          {sideBarButtons.map((button) => {
+            const Icon = SideBarIcons[button.icon];
+            return closeSidebar ? (
+              <Button
+                variant="icon"
+                className="side-bar-button-list"
+                icon={<Icon />}
+                children={undefined}
+              ></Button>
+            ) : (
+              <Button
+                variant="ghost"
+                className="side-bar-button-list"
+                icon={<Icon />}
+              >
+                {button.display_name}
+              </Button>
+            );
+          })}
+        </div>
+        <div style={{ marginBottom: "32px" }}>
+          <Divider />
+        </div>
+        <div style={{ marginBottom: "149px" }}>
+          {sideBarButtonsMenu.map((button) => {
+            const Icon = SideBarMenuIcons[button.icon];
+            return closeSidebar ? (
+              <Button
+                variant="icon"
+                className="side-bar-button-list"
+                icon={<Icon />}
+                children={undefined}
+              ></Button>
+            ) : (
+              <Button
+                variant="ghost"
+                className="side-bar-button-list"
+                icon={<Icon />}
+              >
+                {button.display_name}
+              </Button>
+            );
+          })}
+        </div>
       </div>
-      <div style={{ marginBottom: "32px" }}>
-        <Divider />
-      </div>
-      <div style={{ minHeight: "149px" }}>
-        {sideBarButtonsMenu.map((button) => {
-          const Icon = SideBarMenuIcons[button.icon];
-          return closeSidebar ? (
-            <Button
-              variant="icon"
-              className="side-bar-button-list"
-              icon={<Icon />}
-              children={undefined}
-            ></Button>
-          ) : (
-            <Button
-              variant="ghost"
-              className="side-bar-button-list"
-              icon={<Icon />}
-            >
-              {button.display_name}
-            </Button>
-          );
-        })}
-      </div>
+
       <div
         style={{
           backgroundColor: colors["white"],
           borderRadius: "16px",
           paddingTop: "8px",
-          marginTop: "auto",
+          position: "sticky",
+          bottom: 0,
         }}
       >
         {sideBarButtonActions.map((button) => {
