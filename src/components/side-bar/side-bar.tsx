@@ -31,7 +31,11 @@ const SideBar = ({ closeSidebar, toggleSidebar }) => {
           icon={<PlusIconOutlined />}
         ></Button>
       ) : (
-        <Button variant="primary" className="side-bar-button" icon={<PlusIconOutlined />}>
+        <Button
+          variant="primary"
+          className="side-bar-button"
+          icon={<PlusIconOutlined />}
+        >
           New
         </Button>
       )}
@@ -62,7 +66,7 @@ const SideBar = ({ closeSidebar, toggleSidebar }) => {
       <div style={{ marginBottom: "32px" }}>
         <Divider />
       </div>
-      <div style={{ marginBottom: "149px" }}>
+      <div style={{ minHeight: "149px" }}>
         {sideBarButtonsMenu.map((button) => {
           const Icon = SideBarMenuIcons[button.icon];
           return closeSidebar ? (
@@ -88,8 +92,7 @@ const SideBar = ({ closeSidebar, toggleSidebar }) => {
           backgroundColor: colors["white"],
           borderRadius: "16px",
           paddingTop: "8px",
-          bottom: 0,
-          position: "sticky",
+          marginTop: "auto",
         }}
       >
         {sideBarButtonActions.map((button) => {
